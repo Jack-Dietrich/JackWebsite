@@ -34,7 +34,7 @@
 
     
 }
-.left-top-nav a {
+.left-top-nav  a,.Projects {
     display:flex;
     flex: 1;
     align-items:center;
@@ -52,19 +52,39 @@
     width: 100px;
     cursor: pointer;
     transition: background-color 0.5s, color .5s;
+}
+/* Dropdown CSS*/
 
 
 
+.Projects:hover .dropdown-content{
+    display:flex;
 
-    
 
 }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(250, 237, 202);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  top:46px;
+  border-radius: 15px;
+
+}
+
+
+
+
+/*End of dropdown*/
 
 .left-top-nav a:hover{
     background-color: rgb(254, 93, 38);
     color: white;
 }
-
 
 
 .right-top-nav {
