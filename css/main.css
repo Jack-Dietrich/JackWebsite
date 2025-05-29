@@ -1,0 +1,53 @@
+.main{
+    margin-left: 0 ;
+    margin-top:  0;
+    margin-right: 0 ;
+    padding: 0;
+
+
+}
+
+div{
+    font-family: "Roboto",sans-serif;
+
+}
+
+.horizontal-body h1, h4, h5{
+    font-family: "Roboto",sans-serif;
+    margin: 0
+
+
+
+}
+
+.horizontal-body{
+  display: grid;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+
+
+.section-1{
+
+    background-color: rgb(193, 219, 179);
+    height: 500px;
+
+}
+
+.section-1 h1{
+    font-size: 90pt;
+    margin-bottom: 20px;
+    padding: 100px 50px 0px;
+}
+
+.section-1 h4{
+    margin-bottom: 10px ;
+    font-size: 20pt;
+    margin-left: 50px;
+}
+
+.section-1 h5{
+    margin-top: 40px;
+    margin-left:50px
+}

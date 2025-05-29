@@ -1,0 +1,109 @@
+
+
+
+/* importing google font url*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.main{
+    background-color: rgb(193, 219, 179);
+}
+
+.topnav{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1440px;
+    background-color: rgb(250, 237, 202);
+    flex-direction: row;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    height: 60px;
+    font-family: "Roboto", sans-serif;
+    justify-content: space-between;
+
+
+
+    
+}
+
+.left-top-nav{
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+
+    
+}
+.left-top-nav a {
+    display:flex;
+    flex: 1;
+    align-items:center;
+    background-color: rgb(242, 192, 120);
+    height: 60%;
+    margin: 10px 2px 20px 5px;
+
+    border-radius: 15px;
+    text-align: left;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 15pt;
+    box-shadow: inset;
+    width: 100px;
+    cursor: pointer;
+    transition: background-color 0.5s, color .5s;
+
+
+
+
+    
+
+}
+
+.left-top-nav a:hover{
+    background-color: rgb(254, 93, 38);
+    color: white;
+}
+
+
+
+.right-top-nav {
+    display:flex;
+    align-items:center;
+    flex-direction: row;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    justify-content: right;
+    width: 500px;
+
+}
+
+.right-top-nav div{
+    margin: 5px;
+}
+
+.right-top-nav .name{
+
+    border-radius: 15px 0px 0px 15px  ;
+    background-color: rgb(242, 192, 120);
+
+    margin: 4px 0px 4px 4px;
+    padding-left: 50px;
+
+
+
+
+}
+
+.social-logo{
+    height: 40px;
+    cursor: pointer;
+}
+
+
+
+
+.social-link{
+    display: flex;
+}
+
