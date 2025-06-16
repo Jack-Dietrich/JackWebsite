@@ -1,0 +1,36 @@
+.page-title{
+    margin-top: 50px;
+    font-size: 50px;
+    margin-bottom: 80px;
+}
+
+.content{
+    display: flex;
+}
+
+.hardware{
+    display: flex;
+    justify-content: center
+}
+
+.img img{
+    height:700px;
+    border-radius: 50px;
+
+
+
+}
+
+.img{
+    display: flex;
+    align-self: flex-end;
+}
+
+
+.hardware p{
+    font-size: larger;
+}
+
+
+
+

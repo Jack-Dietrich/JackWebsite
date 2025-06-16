@@ -6,6 +6,8 @@
 .project{
     display:flex;
     flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 /*this is for the outer list of projects*/
@@ -40,6 +42,10 @@
 }
 
 /*Links to other resources I used*/
+
+.subtitle{
+    margin-bottom: 30px;
+}
 
 .refs a{
     flex: 1;

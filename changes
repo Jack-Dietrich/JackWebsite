@@ -2,3 +2,15 @@
 Mon, Jun 16
 -Added slideshow to Hardware projects
 -Re-named div's to give more clarity as to what they contain
+
+Commit 2
+-Changed spacing to external resources
+-started the about section
+-fixed not having the about link link to the about page
+
+Testing:
+-Multiple projects in hardware projects, image slideshow is messed up
+
+
+TODO:
+fix the links in external resources section (convert to css grid)
