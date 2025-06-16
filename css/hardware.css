@@ -1,21 +1,108 @@
 .proj_img{
     width: 500px;
-    height: auto;
-    margin-right: 30px;
     border-radius: 30px;
 }
 
-.section-2{
+.project{
     display:flex;
     flex-direction: row;
 }
 
-.section-2 .li {
-    font-size: 50px;
+/*this is for the outer list of projects*/
+.horizontal-body{
+    display: flexbox;
+    flex-direction: column;
+}
 
+/**/
+
+/*Project description section*/
+.description{
+    margin-top: 20px;
+    font-size: 30px;
+
+}
+
+.description h2{
+    margin-bottom: 20px;
+}
+
+.description li{
+    margin-top: 15px;
 }
 
 .description{
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
+.proj_desc{
+    margin-left:50px
+}
+
+/*Links to other resources I used*/
+
+.refs a{
+    flex: 1;
+    align-items:center; 
+    background-color: rgb(242, 192, 120);
+    height: 60%;
+    margin: 10px 2px 20px 5px;
+    padding: 5px 5px;
+
+    border-radius: 15px;
+    text-align: left;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 15pt;
+    box-shadow: inset;
+    width: 100px;
+    cursor: pointer;
+    transition: background-color 0.5s, color .5s;
+
+
+}
+
+/**/
+
+/*slideshow section*/
+.slideshow{
+    position: relative;
+}
+
+.prev,.next{
+    position: absolute;
+    cursor: pointer;
+    top:50%;
+    color: whitesmoke;
+    font-size: 40px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.prev{
+    right: 0;
+}
+
+.next{
+    left: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgb(254, 93, 38,0.8);
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+
+@keyframes fade {
+    from {opacity: 0.4}
+    to{opacity: 1;}
+}
+
+/*end slideshow section*/
+
 
