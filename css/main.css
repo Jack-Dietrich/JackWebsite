@@ -7,6 +7,12 @@
 
 }
 
+/*Overriding default behaviour of links*/
+a{
+    text-decoration: none;
+    color: black;
+}
+
 div{
     font-family: "Roboto",sans-serif;
 
