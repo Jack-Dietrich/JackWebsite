@@ -9,8 +9,15 @@
 
 /*Overriding default behaviour of links*/
 a{
+
+    /*removing the default behavoiur of links*/
     text-decoration: none;
     color: black;
+
+    
+
+
+    
 }
 
 div{

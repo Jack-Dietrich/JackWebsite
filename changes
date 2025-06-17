@@ -23,6 +23,8 @@ Tue, Jun 17
 Changed:
 -Link style to align with design language(removed text decoration and colour)
 -Removed unnessisary code from external resources section
+-Added typing animation to the About section. Credit to: https://css-tricks.com/snippets/css/typewriter-effect/
+
 
 
 Fixed:

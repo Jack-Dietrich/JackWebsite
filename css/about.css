@@ -4,9 +4,7 @@
     margin-bottom: 80px;
 }
 
-.content{
-    display: flex;
-}
+
 
 .hardware{
     display: flex;
@@ -18,19 +16,72 @@
     border-radius: 50px;
 
 
-
 }
 
 .img{
     display: flex;
-    align-self: flex-end;
+    margin-left: auto;
 }
 
 
 .hardware p{
-    font-size: larger;
+    font-size: 20px;
+}
+
+.description{
+    margin-right: 20px;
 }
 
 
 
+.horizontal-body a{
+    background-color: rgb(242, 192, 120);
+    margin: 10px 2px 20px 5px;
+    padding: 5px 5px;
 
+    border-radius: 15px;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 15pt;
+    box-shadow: inset;
+    cursor: pointer;
+    box-shadow: 5px 5px  black;
+    text-shadow: 1-px;
+    transition: box-shadow 0.5s, background-color 0.5s, color 0.5s ease-in;
+
+    align-items: center;
+
+}
+
+.horizontal-body a:hover{
+
+    box-shadow: 5px 5px rgb(242, 192, 120);
+    background-color: black;
+    color: white;
+
+}
+
+.page-title{
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid orange;
+    letter-spacing: 0.1em;
+      margin: 0 auto;
+    animation: typing 2s steps(20,end),
+                blink-carat .75s step-end infinite;
+
+}
+
+
+/*Defining an animation to get typing effect */
+@keyframes typing {
+    from{width: 0}
+    to{width: 100%}
+}
+
+@keyframes blink-carat {
+    from, to {border-color: transparent}
+    50%{border-color: orange;}
+    
+}
