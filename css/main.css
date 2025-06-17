@@ -20,23 +20,21 @@ a{
     
 }
 
-div{
-    font-family: "Roboto",sans-serif;
 
+
+/* Setting the entire website to use dedicated font*/
+*{
+    font-family: "Roboto",sans-serif;
 }
 
-.horizontal-body h1, h4, h5, ul, h2 {
-    font-family: "Roboto",sans-serif;
-    margin: 0
 
-
-
-}
 
 .horizontal-body{
   display: grid;
   margin: 0 auto;
   max-width: 1440px;
+
+
 }
 
 

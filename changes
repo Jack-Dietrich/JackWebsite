@@ -24,9 +24,19 @@ Changed:
 -Link style to align with design language(removed text decoration and colour)
 -Removed unnessisary code from external resources section
 -Added typing animation to the About section. Credit to: https://css-tricks.com/snippets/css/typewriter-effect/
-
+-Added, then reverted margin of the horizontal body of the website as it was causing issues when screen size was larger than 1440px.
+-Added spinner, currently acting as button on about page
 
 
 Fixed:
 -Image slideshow buttons not moving when resizing webpage
 -External link spacing
+
+
+
+
+Todo:
+-Add an ascii image on the main page
+~~-Figure out how to add spinner for the hardware title on about page~~
+-Add margins for left and right of website contents
+-Possibly convert click to spin button on about page to just run when page is loaded
