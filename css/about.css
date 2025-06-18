@@ -86,6 +86,6 @@
 
 @keyframes blink-carat {
     from, to {border-color: transparent}
-    50%{border-color: orange;}
+    50%{border-color: rgb(242, 192, 120);}
     
 }
