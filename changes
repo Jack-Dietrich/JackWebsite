@@ -41,3 +41,20 @@ Todo:
 -Add margins for left and right of website contents
 -Possibly convert click to spin button on about page to just run when page is loaded
 -Change links that should be buttons to buttons.
+
+Wed, Jun 18
+-----------
+
+Changed:
+-Added scrolling interests bar
+-Added headshot, and re-arranged index.html page
+
+
+Fixed:
+-Having multiple active spinners at once in about section
+
+Broke:
+-Hardware image is now overlapping the summary and text after setting margin to auto for the body of all pages
+-Scrolling skills/interests bar is cut off at bottom
+
+TODO:

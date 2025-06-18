@@ -1,4 +1,9 @@
+let active_spinner = false;
+
 async function spinner(speed){
+    if(active_spinner == false){
+    active_spinner = true;
+
     const spinnerEL = document.getElementById("spinner-el");
     let array = ['|', '/', '-', '\\']
     while(true){
@@ -9,6 +14,7 @@ async function spinner(speed){
 
     }
 
+    }
     }
 
 
