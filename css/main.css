@@ -98,7 +98,7 @@ a{
 /*For scrolling interests bar Based off of: https://medium.com/@archielister/make-an-infinitely-scrolling-banner-with-html-and-css-e7918506c496*/
 .interests{
     width: 100%;
-    height: 2.5rem;
+    height: 100px;
     position: relative;
     overflow: hidden;
     white-space: nowrap;
@@ -114,6 +114,7 @@ a{
     width: fit-content;
     white-space: nowrap;
     animation: loop 30s linear infinite;
+
 }
 
 .fade {
@@ -136,7 +137,7 @@ a{
     gap: 0 0.2rem;
     color: black;
     font-size: .9rem;
-    background-color: rgb(242, 192, 120);
+
     padding: 0.7rem 1rem;
     margin: 0rem 1rem;
     border-radius: 0.5rem;
@@ -145,12 +146,31 @@ a{
 }
 
 .item img{
-    height: 1.5rem;
+    height: 4rem;
     width: auto;
     display: inline-block;
     vertical-align: middle;
     padding: 0;
 }
+
+/*Section for footer css*/
+.footer{
+    background-color: rgb(242, 192, 120);
+    margin: 0 auto;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-top: 50px;
+}
+
+.footer a {
+    display: flex;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+/**/
 
 @keyframes loop {
     0% {transform: translateX(0%);}
