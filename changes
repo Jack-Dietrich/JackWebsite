@@ -58,3 +58,9 @@ Broke:
 -Scrolling skills/interests bar is cut off at bottom
 
 TODO:
+
+
+
+Fri, Jun 20
+Changed:
+-Fixed project image slideshow overlapping. Added test wrapping on small screens

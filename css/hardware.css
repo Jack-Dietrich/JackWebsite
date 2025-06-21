@@ -15,6 +15,7 @@
     flex-direction: row;
     margin-top: 50px;
     margin-bottom: 50px;
+    flex-wrap: nowrap;
 }
 
 /*this is for the outer list of projects*/
@@ -81,6 +82,8 @@
 
 }
 
+
+
 /* On hovering over the links*/
 .refs a:hover{
     box-shadow: 5px 5px rgb(242, 192, 120);
@@ -90,10 +93,14 @@
 
 /**/
 
+
+
 /*slideshow section*/
 .slideshow{
+    display: flex;
     position:relative;
     height: 700px;
+    min-width: 500px;
 }
 
 .prev,.next{
@@ -132,3 +139,11 @@
 /*end slideshow section*/
 
 
+/*Media Queries*/
+
+@media (max-width: 600px) {
+    .project{
+        flex-wrap: wrap;
+    }
+    
+}
