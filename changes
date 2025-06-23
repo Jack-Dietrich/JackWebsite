@@ -70,8 +70,14 @@ Mon Jun 23
 
 Changed:
 -Added new directory for Project planning, and additional images
+-Started work on node.js functionality.
+-
 
 Fixed:
 
 
 Broke:
+
+TODO:
+-Add footer to all pages
+-add temperature functionality
