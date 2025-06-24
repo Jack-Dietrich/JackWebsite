@@ -32,9 +32,9 @@ app.post('/api/temperature', (req,res) => {
 
     console.log(temp);
 
-    if(temp){
-        currentTemp = temp
-        res.json({temp: currentTemp})
+    if(temp){// if temp is defined
+        currentTemp = temp 
+        res.json({temp: currentTemp}) //put the current temp into the response json file
     } else{
         res.status(400).json({error: 'No temp provided'})
     }

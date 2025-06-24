@@ -40,7 +40,7 @@ div{
         <div class="dropdown-content">
             <a href="hardware.html">Hardware</a>
             <a href="software.html">Software</a>
-            <a href="Both.html">Both</a>
+
         </div>
 
       </div> 
@@ -78,17 +78,17 @@ div{
       <hr>
   </div>
 
-  <div class="project">
+  <div class="project" style="flex-direction: row-reverse;">
 
         <div class = "slideshow">
 
-        <img src="/proj_Images/6502.jpg" class ="proj_img fade">
-        <img src="/proj_Images/ALU.jpg" class="proj_img fade">
-        <img src="/proj_Images/pcb.jpg" class="proj_img fade">
+        <img src="/proj_Images/6502.jpg" class ="proj_img1 fade">
+        <img src="/proj_Images/ALU.jpg" class="proj_img1 fade">
+        <img src="/proj_Images/pcb.jpg" class="proj_img1 fade">
 
 
-        <a class="prev" onclick="plusSlides(-1)">►</a>
-        <a class="next" onclick="plusSlides(1)">◄</a>
+        <a class="prev" onclick="plusSlides(-1,1)">►</a>
+        <a class="next" onclick="plusSlides(1,1)">◄</a>
 
 
         <script src = "hardware.js">
@@ -142,6 +142,90 @@ div{
   </div>
 
 
+  <!-- project 2-->
+
+  <div class="project">
+
+        <div class = "slideshow">
+
+        <img src="/proj_Images/BMP_180_1.jpg" class ="proj_img2 fade">
+        <img src="/proj_Images/BMP_180_2.jpg" class="proj_img2 fade">
+        <img src="/proj_Images/BMP_180_3.jpg" class="proj_img2 fade">
+
+        <a class="prev" onclick="plusSlides(-1,2)">►</a>
+        <a class="next" onclick="plusSlides(1,2)">◄</a>
+
+
+        <script src = "hardware.js">
+        </script>
+
+        </div>
+
+        <div class="proj_desc">
+
+            <h1>BMP_180 Library Sensor Project</h1>
+            <hr class="solid">
+            
+            <div class="description">
+
+              <h3>Background</h3>
+              <p>The BMP_180 is a temperature and pressure sensor manufactured by Bosh. My Goal was to write my own library using I2C in order to operate the device and access temperatures in my building. After doing this, My goal was to use the onboard WIFI in order to send POST requests to my website so I could monitor temperatures wherever I was through my website.</p>
+
+
+              <h3>Summary</h3>
+
+              <ul>
+                <li>
+                Built 6502-microprocessor based computer on breadboards, later being translated to a PCB.
+                </li>
+                <li>
+                Referenced wiring diagrams as well as creating logic diagrams while building. Used oscilloscope as well as EEPROM programmer to debug.
+                </li>
+                <li>
+                Enhanced knowledge of computer architecture, assembly, I/O, Binary and Hexadecimal. 
+                </li>
+              </ul>
+
+              <h3>Skills</h3>
+
+              <div class="refs">
+                <a>I2C Protocol</a>
+                <a>ESP32</a>
+                <a>Logic Analyzing(Sigrok)</a>
+                <a>Hardware/Software interface</a>
+                
+              </div>
+
+
+
+            </div>
+              
+
+              <h3>External Resources</h3>
+
+             
+
+              <div class="refs">
+              <a href="https://cdn-shop.adafruit.com/datasheets/BST-BMP180-DS000-09.pdf">BMP180 Datasheet</a>
+              <a href="Ext_files/6502 Gerber Files/">PCB design (Gerber files)</a>
+              <a>another link</a>
+              <a> I am once again another link</a>
+              
+              </div>
+
+
+
+
+
+
+
+        </div>
+
+  </div>
+
+
+
+
 
 
   
@@ -150,6 +234,14 @@ div{
 
 </div>
 
+
+<footer class="footer">
+  
+  <a href="mailto:j22dietr@uwaterloo.ca">Contact Me</a>
+  <p>Designed, programmed and hosted by Jack Dietrich © 2025</p>
+
+
+</footer>
 
 
 </body>
