@@ -1,0 +1,17 @@
+.project{
+    display: flex
+}
+
+
+
+.project h2 {
+    margin-left: 20px;
+    flex:1fr
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+
+}
