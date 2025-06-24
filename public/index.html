@@ -126,6 +126,31 @@ div{
 
   </div>
 
+
+  <div class="section-3">
+
+    <div class="Temperatures">
+
+      <h2>Temperatures</h2>
+      <h3>Current temp in basement is:</h3>
+      <p id="temp1">Degrees Celcius</p>
+      <script>
+      window.addEventListener('DOMContentLoaded', async () => {
+          const response = await fetch('/api/temperature');
+          const data = await response.json();
+          document.getElementById('temp1').innerText = 'Current temperature: ' + data.temp;
+      });
+      </script>
+
+
+
+      
+
+
+    </div>
+
+  </div>
+
 </div>
 
 <footer class="footer">
