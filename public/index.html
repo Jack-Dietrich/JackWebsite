@@ -39,7 +39,7 @@ div{
         <div class="dropdown-content">
             <a href="hardware.html">Hardware</a>
             <a href="software.html">Software</a>
-            <a href="Both.html">Both</a>
+
         </div>
 
       </div>
@@ -109,13 +109,18 @@ div{
 
       <div class="scroll">
 
-        <div class="item"><img src="/proj_Images/HTML5_Badge.svg" alt="HTML5_Badge"></div>
-        <div class="item"><img src="/proj_Images/Logo_freeRTOS.png" alt="Free RTOS logo"></div>
         <div class="item">Computer Architecture</div>
-        <div class="item"><img src="/proj_Images/Risc-V.jpg" alt="Risc-V Logo"></div>
         <div class="item">Embedded development</div>
-        <div class="item"><img src="/proj_Images/CSS3_logo.svg"></div>
         <div class="item">Cyber Security</div>
+        <div class="item"><img src="/proj_Images/HTML5_Badge.svg" alt="HTML5_Badge"></div>
+        <div class="item"><img src="/proj_Images/CSS3_logo.svg"></div>
+        <div class="item"> <img src="/proj_Images/Javascript-shield.png"></div>
+        <div class="item"><img src="/proj_Images/Logo_freeRTOS.png" alt="Free RTOS logo"></div>
+        <div class="item"><img src="/proj_Images/Risc-V.jpg" alt="Risc-V Logo"></div>
+        <div class="item"><img src="/proj_Images/sigrok_logo.png"></div>
+        
+
+
 
       </div>
 
@@ -135,9 +140,9 @@ div{
       <h3>Current temp in basement is:</h3>
       <p id="temp1">Degrees Celcius</p>
       <script>
-      window.addEventListener('DOMContentLoaded', async () => {
-          const response = await fetch('/api/temperature');
-          const data = await response.json();
+      window.addEventListener('DOMContentLoaded', async () => {//when content loads
+          const response = await fetch('/api/temperature');//get the api temp
+          const data = await response.json(); //grab the response json
           document.getElementById('temp1').innerText = 'Current temperature: ' + data.temp;
       });
       </script>
@@ -156,7 +161,7 @@ div{
 <footer class="footer">
   
   <a href="mailto:j22dietr@uwaterloo.ca">Contact Me</a>
-  <p>Jack Dietrich © 2025</p>
+  <p>Designed, programmed and hosted by Jack Dietrich © 2025</p>
 
 
 </footer>

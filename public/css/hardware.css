@@ -1,4 +1,4 @@
-.proj_img{
+.slideshow img {
     width: 500px;
     border-radius: 30px;
 }
@@ -17,6 +17,8 @@
     margin-bottom: 50px;
     flex-wrap: nowrap;
 }
+
+
 
 /*this is for the outer list of projects*/
 .horizontal-body{
@@ -46,7 +48,8 @@
 }
 
 .proj_desc{
-    margin-left:50px
+    margin-left:50px;
+    margin-right: 50px;
 }
 
 /*Links to other resources I used*/
