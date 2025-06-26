@@ -107,3 +107,22 @@ TODO:
 -Make carousal repeat instead of resetting
 -Update links on hardware page
 -Add page dedicated to making the website itself
+
+
+Thurs Jun 26
+------------
+
+
+Changed
+
+Commit 1
+--------
+
+Changed:
+-Added description this website project
+
+Fixed:
+-About link not functioning from projects->software page
+
+
+TODO:
