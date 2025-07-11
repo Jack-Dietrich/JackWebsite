@@ -186,13 +186,23 @@ div{
 
               <h3>Skills</h3>
 
-              <div class="refs">
-                <a>I2C Protocol</a>
-                <a>ESP32</a>
-                <a>Logic Analyzing(Sigrok)</a>
-                <a>Hardware/Software interface</a>
-                
-              </div>
+              <ul>
+                <li>
+                I2C Protocol
+                </li>
+                <li>
+                ESP32
+                </li>
+                <li>
+                Logic Analyzing(Sigrok)
+                </li>
+                <li>
+                Hardware/Software interface
+                </li>
+              </ul>
+
+
+
 
 
 
@@ -230,12 +240,17 @@ div{
             <hr class="solid">
             
             <div class="description">
+              <img src="/proj_images/uw_orbital_badge.jpg">
+
 
               <h3>About the Team</h3>
               <p>UW Orbital is a student design team at the University of Waterloo participating in the Canadian Satellite Design Challenge (CSDC) - a competition that involves a dozen universities from across Canada and runs every two years. Teams design a 3U CubeSats with unique missions and payloads, and attempt to pass launch readiness evaluations such as vibration testing. The competition offers to fund the launch costs for the winning team.</p>
 
+              <div class="more">
 
-              <h3>Resposibilities</h3>
+              <div class="Responisbilities">
+              
+              <h3>Responsibilities</h3>
 
               <ul>
                 <li>
@@ -249,21 +264,44 @@ div{
                 </li>
               </ul>
 
-              <h3>Skills</h3>
 
-              <div class="refs">
-                <a>I2C Protocol</a>
-                <a>FreeRTOS</a>
-                <a>Interrupts</a>
-                <a>Hardware/Software interface</a>
-                <a>Mutex's, Semaphores, Task creation and management</a>
-                
               </div>
 
 
+              <div class="skills">
+
+              <h3>Skills</h3>
+
+              <ul>
+
+                <li>
+                FreeRTOS
+                </li>
+                <li>
+                I2C protocol
+                </li>
+                <li>
+                Interrupts
+                </li>
+                <li>
+                Hardware/Software interface
+                </li>
+
+                <li>
+                Mutex's, Semaphores, Task creation and management
+                </li>
+
+              </ul>
+                
+
+
+
+
+              </div>
 
             </div>
-              
+
+
 
               <h3>External Resources</h3>
 
@@ -277,6 +315,12 @@ div{
               </div>
 
 
+            </div>
+              
+
+
+
+
 
 
 
@@ -287,7 +331,81 @@ div{
   </div>
 
 
+  <div class="project">
 
+
+        <div class="proj_desc">
+
+            <h1>ADXL-345 library project</h1>
+            <hr class="solid">
+            
+            <div class="description">
+
+              <img src="/proj_Images/adxl345.gif">
+              
+
+              <h3>Summary</h3>
+              <p>Starting this project, I learned the basics of SPI communication (MISO, MOSI, SS,CLK) and wrote basic functions in order to power on the device and initate readings. Along the way, I used both a logic analyser and oscilliscope to debug my program. Next I worked on implementing more functionality of the adxl345 such as chanign data rate, tap detection, and interrupt handling. Next, I hope to convert the project to freeRTOS and C in order to more easily handle interrupts and bring my code closer to code seen in production.</p>
+
+
+              <h3>Skills</h3>
+
+              <ul>
+
+                <li>
+                FreeRTOS
+                </li>
+                <li>
+                SPI protocol
+                </li>
+                <li>
+                Interrupts
+                </li>
+                <li>
+                Hardware/Software interface
+                </li>
+
+                <li>
+                Mutex's, Semaphores, Task creation and management
+                </li>
+                <li>
+                Logic Analyzing
+                </li>
+
+                <li>
+                Debugging with Oscilliscope
+                </li>
+
+              </ul>
+
+
+
+
+
+
+            </div>
+              
+
+              <h3>External Resources</h3>
+
+             
+
+              <div class="refs">
+              <a href="https://www.analog.com/media/en/technical-documentation/data-sheets/adxl345.pdf">ADXL-345 datasheet</a>
+              <a href="https://github.com/Jack-Dietrich/ADXL345-Library-Project">GitHub link to the project</a>
+
+              
+              </div>
+
+
+
+
+
+
+
+        </div>
+
+  </div>
 
 
 
