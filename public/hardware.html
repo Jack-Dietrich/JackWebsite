@@ -116,18 +116,29 @@ div{
                 Enhanced knowledge of computer architecture, assembly, I/O, Binary and Hexadecimal. 
                 </li>
               </ul>
-            </div>
+
+
+              <h3>Development environment</h3>
+
+              <p>Kikad</p>
+
               
               <div class="subtitle">
-                 <h2>External Resources</h2>
+              <h3>External Resources</h3>
               </div>
              
+
+
 
               <div class="refs">
               <a href="https://youtube.com/playlist?list=PLowKtXNTBypFbtuVMUVXNR0z1mu7dp7eH&si=-x86MyVejjAb9HX_">Ben Eater's Video Series</a>
               <a href="Ext_files/6502 Gerber Files/">PCB design (Gerber files)</a>
               
               </div>
+
+
+            </div>
+
 
 
 
@@ -201,13 +212,10 @@ div{
                 </li>
               </ul>
 
+              <h3>Development environment</h3>
 
+              <p>Vscode + Platformio</p>              
 
-
-
-
-            </div>
-              
 
               <h3>External Resources</h3>
 
@@ -219,6 +227,14 @@ div{
               <a href="https://sigrok.org/wiki/Main_Page">Sigrock</a>
               
               </div>
+
+
+
+
+            </div>
+              
+
+
 
 
 
@@ -359,7 +375,7 @@ div{
                 SPI protocol
                 </li>
                 <li>
-                Interrupts
+                Realtime Interrupts
                 </li>
                 <li>
                 Hardware/Software interface
@@ -376,15 +392,15 @@ div{
                 Debugging with Oscilliscope
                 </li>
 
+                <li>
+                ESP32
+                </li>
+
               </ul>
 
+              <h3>Development environment</h3>
 
-
-
-
-
-            </div>
-              
+              <p>Vscode + Platformio</p>
 
               <h3>External Resources</h3>
 
@@ -396,6 +412,14 @@ div{
 
               
               </div>
+
+
+
+
+            </div>
+              
+
+
 
 
 
@@ -418,12 +442,24 @@ div{
             
             <div class="description">
 
-              <img src="/proj_Images/IR_Remote_1.jpg">
-              <img src="/proj_Images/IR_Remote_2.jpg">
+              <div class = "slideshow">
+
+              <img src="/proj_Images/IR_Remote_1.jpg" class ="proj_img4 fade">
+              <img src="/proj_Images/IR_Remote_2.jpg" class="proj_img4 fade">
+
+              <a class="prev" onclick="plusSlides(-1,4)">►</a>
+              <a class="next" onclick="plusSlides(1,4)">◄</a>
+
+
+              <script src = "hardware.js">
+              </script>
+
+              </div>
+
               
 
               <h3>Summary</h3>
-              <hr class="dotted">
+              <hr class="solid">
 
               <h4>Need</h4>
               <p>The need for this project started after I hosted my own local music server and was able to start playing music from my phone, but needed to physically turn on the
@@ -433,7 +469,17 @@ div{
 
               <h4>The Project</h4>
               <p>
-                I used 
+                I used an IR led from an unused remote and connected it to my oscilliscope in order to view the data being sent from the reciver's remote for various commands such as ON, INPUT ETC. I then
+                measured the lengths of these pulses and wrote a c++ program to mimmick this behaviour. On testing this, it did not work!. At first, I attributed this to the strength of the IR led, so I reduced it's resistance
+                hoping for an improvement. However, this yeilded no success. Upon further research, I discovered my problem was twofold. First, my timing for what should be interpereted as a 1 and 0 were slightly off, and second the signal used
+                a 40khz carrier wave. I fixed the first by simply adjusting the timing, and the second I wrote a function to oscillate a signal at 40khz when it was specified to be on. After testing this out, it worked!
+              
+              </p>
+              <p>
+                My process for sending bits to the IR led was rudimentary so I improved it by using bitwise operations on a 16bit word of data in order to send a bit, then shift the remaining bits until none were left.
+                Next, I researched the bluetooth capabilities of the ESP32 and BluetoothSerial library that would work. I then downloaded a serial terminal on my phone and was able to send commands to the receiver through character input over
+                Bluetooth!
+
 
               </p>
 
@@ -443,7 +489,7 @@ div{
               <ul>
 
                 <li>
-                reverse engineering
+                Reverse engineering
                 </li>
                 <li>
                 Troubleshooting
@@ -454,23 +500,23 @@ div{
                 <li>
                 Hardware/Software interface
                 </li>
-
                 <li>
                 Oscilliscope triggering, measurement and analysis
                 </li>
                 <li>
-                FreeRTOS queues and ISR's
+                FreeRTOS queues
+                </li>
+
+                <li>
+                ESP32 
                 </li>
 
               </ul>
 
+              <h3>Development environment</h3>
 
+              <p>Vscode + Platformio</p>
 
-
-
-
-            </div>
-              
 
               <h3>External Resources</h3>
 
@@ -479,9 +525,18 @@ div{
               <div class="refs">
               <a href="https://www.analog.com/media/en/technical-documentation/data-sheets/adxl345.pdf">ADXL-345 datasheet</a>
               <a href="https://github.com/Jack-Dietrich/IR-Remote-reverse-engineer">GitHub link to the project</a>
+              <a href="https://www.sbprojects.net/knowledge/ir/sirc.php">Useful website for insight into the sony wireless protocol </a>
+              <a href="https://www.righto.com/2010/03/understanding-sony-ir-remote-codes-lirc.html">Another website I used</a>
 
               
-              </div>
+              </div>                
+
+
+
+            </div>
+              
+
+
 
 
 

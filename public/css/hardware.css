@@ -1,6 +1,7 @@
 .slideshow img {
     width: 500px;
     border-radius: 30px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.281);
 }
 
 .page-title{
@@ -102,7 +103,7 @@
 .slideshow{
     display: flex;
     position:relative;
-    height: 700px;
+    height: 800px;
     min-width: 500px;
 }
 
@@ -137,7 +138,9 @@
     display: flex;
     border-radius: 10px;
     width: 1340px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.281);
 }
+
 
 .badge{
     height: 200px;
@@ -148,7 +151,7 @@
 }
 
 hr.solid{
-  border-top: 3px solid #bbb;
+  border-top: 3px solid #000000;
 }
 
 .more{

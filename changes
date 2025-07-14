@@ -131,6 +131,14 @@ Re-organised the software projects page. Added adxl-345 project description and 
 
 
 Monday July 14th
+----------------
+Commit 1:
+
 -Changed Projects-> hardware heading to Projects -> Hardware/embedded
 
 -Added project in hardware: IR remote reverse engineering
+
+
+Commit 2:
+-Removed about my equipment section
+-Finished addign IR Remove reverse engineering project 
