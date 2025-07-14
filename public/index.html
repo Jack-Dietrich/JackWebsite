@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+
+<link rel="stylesheet" href="./css/header.css"> 
+<link rel="stylesheet" href="./css/footer.css"> 
+<link rel="stylesheet" href="./css/main.css"> 
+
+
+
+<title>Welcome!</title>
+
+
+</head>
+
+
+<style>
+div{
+  font-family: 'Open-Sans';
+}
+</style>
+
+
+<body class="main">
+<nav class="topnav">
+  <div class="left-top-nav">
+      <a href="index.html" class="home"> 
+          Home
+      </a>
+      <a href="about.html" class="about">
+          About
+      </a>
+      
+      <div class="Projects">
+          Projects
+        <div class="dropdown-content">
+            <a href="hardware.html">Hardware/Embedded</a>
+            <a href="software.html">Software</a>
+
+        </div>
+
+      </div>
+      </div>
+  </div>
+  
+  <div class="right-top-nav">
+
+      <div class="social-link">
+          <a href="https://github.com"> 
+            <img src="/Images/github-mark.svg" alt="GitHub Logo" class="social-logo" >
+          </a>
+        
+      </div>
+      <div class="social-link">
+
+        <a href="https://linkedin.com">
+          <img src="/Images/LI-In-Bug.png" alt="LinkedIn Logo" class="social-logo">
+        </a>
+        
+      </div>
+  
+  </div>
+
+
+
+</nav>
+
+
+<div class="horizontal-body">
+
+  <div class="section-1">
+
+  
+      <h1>Hi I'm Jack Dietrich!</h1>
+
+
+
+
+
+  </div>
+
+  <div class="section-2">
+
+      <div class="description">      
+      
+        <h2>2nd year Computer Engineering student at Waterloo</h4>
+        <h3>Welcome to my website</h5>
+
+        <h3>About Me</h3>
+        <p>This is come text that describes me and is very informative about my interests, but also has a sense of personality and was not written by AI.</p>
+    
+      </div>
+
+
+    <img src="/proj_Images/headshot.jpg" class="headshot">
+
+
+
+  </div>
+
+  <h2>Skills and Interests</h2>
+
+  <div class="section-3">
+
+    <div class="interests">
+
+      <div class="scroll">
+
+        <div class="item">Computer Architecture</div>
+        <div class="item">Embedded development</div>
+        <div class="item">Cyber Security</div>
+        <div class="item"><img src="/proj_Images/HTML5_Badge.svg" alt="HTML5_Badge"></div>
+        <div class="item"><img src="/proj_Images/CSS3_logo.svg"></div>
+        <div class="item"> <img src="/proj_Images/Javascript-shield.png"></div>
+        <div class="item"><img src="/proj_Images/Logo_freeRTOS.png" alt="Free RTOS logo"></div>
+        <div class="item"><img src="/proj_Images/Risc-V.jpg" alt="Risc-V Logo"></div>
+        <div class="item"><img src="/proj_Images/sigrok_logo.png"></div>
+        
+
+
+
+      </div>
+
+      <div class="fade"></div>
+
+    </div>
+
+
+  </div>
+
+
+  <div class="section-3">
+
+    <div class="Temperatures">
+
+      <h2>Temperatures</h2>
+      <h3>Current temp in basement is:</h3>
+      <p id="temp1">Degrees Celcius</p>
+      <script>
+      window.addEventListener('DOMContentLoaded', async () => {//when content loads
+          const response = await fetch('/api/temperature');//get the api temp
+          const data = await response.json(); //grab the response json
+          document.getElementById('temp1').innerText = 'Current temperature: ' + data.temp;
+      });
+      </script>
+
+
+
+      
+
+
+    </div>
+
+  </div>
+
+</div>
+
+<footer class="footer">
+  
+  <a href="mailto:j22dietr@uwaterloo.ca">Contact Me</a>
+  <p>Designed, programmed and hosted by Jack Dietrich © 2025</p>
+
+
+</footer>
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,193 @@
+.main{
+    margin-left: 0 ;
+    margin-top:  0;
+    margin-right: 0 ;
+    padding: 0;
+
+
+}
+
+/*Overriding default behaviour of links*/
+a{
+
+    /*removing the default behavoiur of links*/
+    text-decoration: none;
+    color: black;
+
+}
+
+
+
+
+
+/* Setting the entire website to use dedicated font*/
+*{
+    font-family: "Roboto",sans-serif;
+}
+
+
+
+.horizontal-body{
+  display: grid;
+  margin: 0 auto;
+  max-width: 1440px;
+  margin-left: auto;
+
+
+}
+
+
+
+.section-1{
+
+    background-color: rgb(193, 219, 179);
+
+
+}
+
+.section-1 h1{
+    font-size: 90pt;
+}
+
+
+
+.section-1 h5{
+    margin-top: 40px;
+
+}
+
+.section-1 h1{
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid rgb(242, 192, 120);
+    
+      margin: auto 50px auto;
+    animation: typing 2s steps(20,end),
+                blink-carat .75s step-end infinite;
+
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.section-2{
+    display: flex;
+    flex-direction: row;
+}
+
+.headshot{
+    display: flex;
+    border-radius: 500px;
+    height: 600px;
+    margin-left: auto; /* to align it to  the left*/
+
+
+
+    border: 5px;
+    border-style: solid;
+    box-shadow:10px 10px 10px rgba(0, 0, 0, 0.281);
+}
+
+.section-3{
+    margin-top: 50px;
+}
+
+/*For scrolling interests bar Based off of: https://medium.com/@archielister/make-an-infinitely-scrolling-banner-with-html-and-css-e7918506c496*/
+.interests{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    background: rgb(250, 237, 202);
+    color: #fff;
+}
+
+.interests .scroll{
+    background: rgb(250, 237, 202);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: fit-content;
+    white-space: nowrap;
+    animation: loop 30s linear infinite;
+
+}
+
+.fade {
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(
+        90deg,
+        rgb(193, 219, 179),
+        transparent 30%,
+        transparent 90%,
+        rgb(193, 219, 179)
+    );
+    inset: 0;
+
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 0 0.2rem;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+
+    padding: 0.7rem 1rem;
+    margin: 0rem 1rem;
+    border-radius: 0.5rem;
+    white-space: nowrap;
+
+
+}
+
+.item img{
+    height: 4rem;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+}
+
+/*Section for footer css*/
+.footer{
+    background-color: rgb(242, 192, 120);
+    margin: 0 auto;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-top: 50px;
+}
+
+.footer a {
+    display: flex;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+/**/
+
+@keyframes loop {
+    0% {transform: translateX(0%);}
+    100% {transform: translateX(-50%);}
+}
+
+/*Defining an animation to get typing effect seen in page title */
+@keyframes typing {
+    from{width: 0}
+    to{width: 100%}
+}
+
+@keyframes blink-carat {
+    from, to {border-color: transparent}
+    50%{border-color: rgb(242, 192, 120)}
+    
+}

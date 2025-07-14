@@ -1,0 +1,45 @@
+.project{
+    display: flex
+}
+
+.project p {
+    line-height: 1.5;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    flex-grow: 2;
+}
+
+/*Styling for links*/
+
+.refs a{
+    background-color: rgb(242, 192, 120);
+    margin: 10px 2px 20px 5px;
+    padding: 5px 5px;
+
+    border-radius: 15px;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 15pt;
+    box-shadow: inset;
+    cursor: pointer;
+    box-shadow: 5px 5px  black;
+    text-shadow: 1-px;
+    transition: box-shadow 0.5s, background-color 0.5s, color 0.5s ease-in;
+
+
+
+}
+
+
+
+/* On hovering over the links*/
+.refs a:hover{
+    box-shadow: 5px 5px rgb(242, 192, 120);
+    background-color: black;
+    color: white;
+}
