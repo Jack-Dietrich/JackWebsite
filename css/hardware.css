@@ -130,6 +130,28 @@
     animation-duration: 1s;
 }
 
+.description img {
+    display: flex;
+    border-radius: 10px;
+    width: 1340px;
+}
+
+.badge{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-self: flex-end;
+    flex-direction: row;
+}
+
+hr.solid{
+  border-top: 3px solid #bbb;
+}
+
+.more{
+    display: flex;
+    justify-content: space-between;
+}
 
 @keyframes fade {
     from {opacity: 0.4}

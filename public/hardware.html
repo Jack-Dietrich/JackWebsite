@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+
+<link rel="stylesheet" href="css/header.css"> 
+<link rel="stylesheet" href="css/footer.css"> 
+<link rel="stylesheet" href="css/main.css"> 
+<link rel="stylesheet" href="css/hardware.css"> 
+
+
+
+<title>Welcome!</title>
+
+
+</head>
+
+
+<style>
+div{
+  font-family: 'Open-Sans';
+}
+</style>
+
+
+<body class="main">
+<nav class="topnav">
+  <div class="left-top-nav">
+      <a href="index.html" class="home"> 
+          Home
+      </a>
+      <a href="about.html" class="about">
+          About
+      </a>
+      
+      <div class="Projects">
+          Projects
+        <div class="dropdown-content">
+            <a href="hardware.html">Hardware/Embedded</a>
+            <a href="software.html">Software</a>
+
+        </div>
+
+      </div> 
+      </div>
+  </div>
+  
+  <div class="right-top-nav">
+
+      <div class="social-link">
+          <a href="https://github.com"> 
+            <img src="/Images/github-mark.svg" alt="GitHub Logo" class="social-logo" >
+          </a>
+        
+      </div>
+      <div class="social-link">
+
+        <a href="https://linkedin.com">
+          <img src="/Images/LI-In-Bug.png" alt="LinkedIn Logo" class="social-logo">
+        </a>
+        
+      </div>
+  
+  </div>
+
+
+
+</nav>
+
+
+<div class="horizontal-body">
+
+  <div class="page-title">
+      <h1>Hardware/Embedded Projects</h1>
+
+      <hr>
+  </div>
+
+  <div class="project" style="flex-direction: row-reverse;">
+
+        <div class = "slideshow">
+
+        <img src="/proj_Images/6502.jpg" class ="proj_img1 fade">
+        <img src="/proj_Images/ALU.jpg" class="proj_img1 fade">
+        <img src="/proj_Images/pcb.jpg" class="proj_img1 fade">
+
+
+        <a class="prev" onclick="plusSlides(-1,1)">►</a>
+        <a class="next" onclick="plusSlides(1,1)">◄</a>
+
+
+        <script src = "hardware.js">
+        </script>
+
+        </div>
+
+        <div class="proj_desc">
+
+            <h1>6502 Based Computer</h1>
+            <hr class="solid">
+            
+            <div class="description">
+
+              <h2>Summary</h2>
+
+              <ul>
+                <li>
+                Built 6502-microprocessor based computer on breadboards, later being translated to a PCB.
+                </li>
+                <li>
+                Referenced wiring diagrams as well as creating logic diagrams while building. Used oscilloscope as well as EEPROM programmer to debug.
+                </li>
+                <li>
+                Enhanced knowledge of computer architecture, assembly, I/O, Binary and Hexadecimal. 
+                </li>
+              </ul>
+            </div>
+              
+              <div class="subtitle">
+                 <h2>External Resources</h2>
+              </div>
+             
+
+              <div class="refs">
+              <a href="https://youtube.com/playlist?list=PLowKtXNTBypFbtuVMUVXNR0z1mu7dp7eH&si=-x86MyVejjAb9HX_">Ben Eater's Video Series</a>
+              <a href="Ext_files/6502 Gerber Files/">PCB design (Gerber files)</a>
+              
+              </div>
+
+
+
+
+
+
+
+        </div>
+
+  </div>
+
+
+  <!-- project 2-->
+
+  <div class="project">
+
+        <div class = "slideshow">
+
+        <img src="/proj_Images/BMP_180_1.jpg" class ="proj_img2 fade">
+        <img src="/proj_Images/BMP_180_2.jpg" class="proj_img2 fade">
+        <img src="/proj_Images/BMP_180_3.jpg" class="proj_img2 fade">
+
+        <a class="prev" onclick="plusSlides(-1,2)">►</a>
+        <a class="next" onclick="plusSlides(1,2)">◄</a>
+
+
+        <script src = "hardware.js">
+        </script>
+
+        </div>
+
+        <div class="proj_desc">
+
+            <h1>BMP_180 Library Sensor Project</h1>
+            <hr class="solid">
+            
+            <div class="description">
+
+              <h3>Background</h3>
+              <p>The BMP_180 is a temperature and pressure sensor manufactured by Bosh. My Goal was to write my own library using I2C in order to operate the device and access temperatures in my building. After doing this, My goal was to use the onboard WIFI in order to send POST requests to my website so I could monitor temperatures wherever I was through my website.</p>
+
+
+              <h3>Summary</h3>
+
+              <ul>
+                <li>
+                Referenced datasheet in order to write C++ code to communicate with the BMP180 sensor via I2C.
+                </li>
+                <li>
+                Used a logic analyzer in order to debug I2C communication while referencing the datasheet and known good examples.
+                </li>
+                <li>
+                Integrated WiFi communication to communicate with node.js server and post temperatures.
+                </li>
+              </ul>
+
+              <h3>Skills</h3>
+
+              <ul>
+                <li>
+                I2C Protocol
+                </li>
+                <li>
+                ESP32
+                </li>
+                <li>
+                Logic Analyzing(Sigrok)
+                </li>
+                <li>
+                Hardware/Software interface
+                </li>
+              </ul>
+
+
+
+
+
+
+            </div>
+              
+
+              <h3>External Resources</h3>
+
+             
+
+              <div class="refs">
+              <a href="https://cdn-shop.adafruit.com/datasheets/BST-BMP180-DS000-09.pdf">BMP180 Datasheet</a>
+              <a href="https://github.com/Jack-Dietrich/bmp180-library-project">GitHub Link</a>
+              <a href="https://sigrok.org/wiki/Main_Page">Sigrock</a>
+              
+              </div>
+
+
+
+
+
+
+
+        </div>
+
+  </div>
+
+
+  <div class="project">
+
+
+        <div class="proj_desc">
+
+            <h1>UW Orbital Firmware Team</h1>
+            <hr class="solid">
+            
+            <div class="description">
+              <img src="/proj_images/uw_orbital_badge.jpg">
+
+
+              <h3>About the Team</h3>
+              <p>UW Orbital is a student design team at the University of Waterloo participating in the Canadian Satellite Design Challenge (CSDC) - a competition that involves a dozen universities from across Canada and runs every two years. Teams design a 3U CubeSats with unique missions and payloads, and attempt to pass launch readiness evaluations such as vibration testing. The competition offers to fund the launch costs for the winning team.</p>
+
+              <div class="more">
+
+              <div class="Responisbilities">
+              
+              <h3>Responsibilities</h3>
+
+              <ul>
+                <li>
+                Example 1
+                </li>
+                <li>
+                Example 2
+                </li>
+                <li>
+                Example 3
+                </li>
+              </ul>
+
+
+              </div>
+
+
+              <div class="skills">
+
+              <h3>Skills</h3>
+
+              <ul>
+
+                <li>
+                FreeRTOS
+                </li>
+                <li>
+                I2C protocol
+                </li>
+                <li>
+                Interrupts
+                </li>
+                <li>
+                Hardware/Software interface
+                </li>
+
+                <li>
+                Mutex's, Semaphores, Task creation and management
+                </li>
+
+              </ul>
+                
+
+
+
+
+              </div>
+
+            </div>
+
+
+
+              <h3>External Resources</h3>
+
+             
+
+              <div class="refs">
+              <a href="https://www.uworbital.com/">UW Orbital Website</a>
+              <a href="https://github.com/Jack-Dietrich/OBC-Firmware-Onboarding">GitHub Link to Onboarding challenge</a>
+
+              
+              </div>
+
+
+            </div>
+              
+
+
+
+
+
+
+
+
+
+        </div>
+
+  </div>
+
+
+  <div class="project">
+
+
+        <div class="proj_desc">
+
+            <h1>ADXL-345 library project</h1>
+            <hr class="solid">
+            
+            <div class="description">
+
+              <img src="/proj_Images/adxl345.gif">
+              
+
+              <h3>Summary</h3>
+              <p>Starting this project, I learned the basics of SPI communication (MISO, MOSI, SS,CLK) and wrote basic functions in order to power on the device and initate readings. Along the way, I used both a logic analyser and oscilliscope to debug my program. Next I worked on implementing more functionality of the adxl345 such as chanign data rate, tap detection, and interrupt handling. Next, I hope to convert the project to freeRTOS and C in order to more easily handle interrupts and bring my code closer to code seen in production.</p>
+
+
+              <h3>Skills</h3>
+
+              <ul>
+
+                <li>
+                FreeRTOS
+                </li>
+                <li>
+                SPI protocol
+                </li>
+                <li>
+                Interrupts
+                </li>
+                <li>
+                Hardware/Software interface
+                </li>
+
+                <li>
+                Mutex's, Semaphores, Task creation and management
+                </li>
+                <li>
+                Logic Analyzing
+                </li>
+
+                <li>
+                Debugging with Oscilliscope
+                </li>
+
+              </ul>
+
+
+
+
+
+
+            </div>
+              
+
+              <h3>External Resources</h3>
+
+             
+
+              <div class="refs">
+              <a href="https://www.analog.com/media/en/technical-documentation/data-sheets/adxl345.pdf">ADXL-345 datasheet</a>
+              <a href="https://github.com/Jack-Dietrich/ADXL345-Library-Project">GitHub link to the project</a>
+
+              
+              </div>
+
+
+
+
+
+
+
+        </div>
+
+  </div>
+
+
+  <div class="project">
+
+
+        <div class="proj_desc">
+
+            <h1>IR Remote reverse engineering</h1>
+            <hr class="solid">
+            
+            <div class="description">
+
+              <img src="/proj_Images/IR_Remote_1.jpg">
+              <img src="/proj_Images/IR_Remote_2.jpg">
+              
+
+              <h3>Summary</h3>
+              <hr class="dotted">
+
+              <h4>Need</h4>
+              <p>The need for this project started after I hosted my own local music server and was able to start playing music from my phone, but needed to physically turn on the
+                reciever and switch inputs. I figured if I could salvage an IR led from a previous remote and connect it to an esp32 using bluetooth or wifi, I could control the reciever
+                remotely.
+              </p>
+
+              <h4>The Project</h4>
+              <p>
+                I used 
+
+              </p>
+
+
+              <h3>Skills</h3>
+
+              <ul>
+
+                <li>
+                reverse engineering
+                </li>
+                <li>
+                Troubleshooting
+                </li>
+                <li>
+                Bluetooth
+                </li>
+                <li>
+                Hardware/Software interface
+                </li>
+
+                <li>
+                Oscilliscope triggering, measurement and analysis
+                </li>
+                <li>
+                FreeRTOS queues and ISR's
+                </li>
+
+              </ul>
+
+
+
+
+
+
+            </div>
+              
+
+              <h3>External Resources</h3>
+
+             
+
+              <div class="refs">
+              <a href="https://www.analog.com/media/en/technical-documentation/data-sheets/adxl345.pdf">ADXL-345 datasheet</a>
+              <a href="https://github.com/Jack-Dietrich/IR-Remote-reverse-engineer">GitHub link to the project</a>
+
+              
+              </div>
+
+
+
+
+
+
+
+        </div>
+
+  </div>
+
+
+  
+  
+
+
+</div>
+
+
+<footer class="footer">
+  
+  <a href="mailto:j22dietr@uwaterloo.ca">Contact Me</a>
+  <p>Designed, programmed and hosted by Jack Dietrich © 2025</p>
+
+
+</footer>
+
+
+</body>
+
+
+</html>

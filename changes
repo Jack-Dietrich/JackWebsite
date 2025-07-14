@@ -64,3 +64,73 @@ TODO:
 Fri, Jun 20
 Changed:
 -Fixed project image slideshow overlapping. Added test wrapping on small screens
+
+Mon Jun 23
+----------
+
+Changed:
+-Added new directory for Project planning, and additional images
+-Started work on node.js functionality.
+-
+
+Fixed:
+
+
+Broke:
+
+TODO:
+-Add footer to all pages
+-add temperature functionality
+
+
+Tue Jun 24
+----------
+
+Changed:
+
+Commit 1
+--------
+
+-Added real time temperatures on home page
+-Added projects on the "Both" page
+-Removed "Both" Link from the navigation bar, as I have decided to just have Hardware and Software section.
+-Removed blinking carat from about section
+-Added 2nd project to hardware projects, changed logic for slideshow as multiple were showing at once
+-Added sigrok logo to slideshow, Javascript, re-organized icons.
+
+Commit 2
+--------
+-Beginning work on software page
+
+
+TODO:
+-Make carousal repeat instead of resetting
+-Update links on hardware page
+-Add page dedicated to making the website itself
+
+
+Thurs Jun 26
+------------
+
+
+Changed
+
+Commit 1
+--------
+
+Changed:
+-Added description this website project
+
+Fixed:
+-About link not functioning from projects->software page
+
+
+Fri July 11
+Re-organised the software projects page. Added adxl-345 project description and gif.
+
+
+
+Monday July 14th
+-Changed Projects-> hardware heading to Projects -> Hardware/embedded
+
+-Added project in hardware: IR remote reverse engineering
