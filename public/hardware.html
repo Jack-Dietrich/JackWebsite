@@ -549,6 +549,114 @@ div{
   </div>
 
 
+
+  <div class="project">
+
+
+        <div class="proj_desc">
+
+            <h1>DIY Streamdeck (UART/USB)</h1>
+            <hr class="solid">
+            
+            <div class="description">
+
+              <div class = "slideshow">
+
+              <img src="/proj_Images/StreamController_1.jpg" class ="proj_img5 fade">
+              <img src="/proj_Images/StreamController_2.jpg" class="proj_img5 fade">
+
+              <a class="prev" onclick="plusSlides(-1,4)">►</a>
+              <a class="next" onclick="plusSlides(1,4)">◄</a>
+
+
+              <script src = "hardware.js">
+              </script>
+
+              </div>
+
+              
+
+              <h3>Summary</h3>
+              <hr class="solid">
+
+              <h4>Need</h4>
+              <p> I often have many manual applications and keypresses I want to accomplish when I start my pc, or various programs. I decided to create a hardware device that would function as a keyboard and would have
+                buttons that could be programmed to execute certain keypresses or strings of keypresses.
+              </p>
+
+              <h4>The Project</h4>
+              <p>
+                To start, I discovered I had a CP2102 USB to UART bridge already in my possesion so I connected this to the UART2 port of the ESP32. I then wrote basic freeRTOS functionality in order to detect and send button
+                presses to a queue. On a button being pressed, this would trigger the serial output from the UART port, displaying a button has been pressed. Upon further reasearch I realized that I need this device to appear
+                to the computer as a HID (Human Interface Device) in order for it to function as a keyboard. So, I plan on upgrading to a CP2110 which has this feature and should mean button interrupts can trigger HID events,
+                such as keyboard presses, as described in the  <b> <a href="https://wiki.osdev.org/USB_Human_Interface_Devices">OSdev wiki</a> </b>
+              </p>
+
+
+
+              <h3>Skills</h3>
+
+              <ul>
+
+                <li>
+                UART/USB
+                </li>
+                <li>
+                Troubleshooting
+                </li>
+                <li>
+                Interfacing with multiple libraries
+                </li>
+                <li>
+                Hardware/Software interface
+                </li>
+                <li>
+                FreeRTOS queues
+                </li>
+                <li>
+                ESP32 
+                </li>
+
+              </ul>
+
+              <h3>Development environment</h3>
+
+              <p>Vscode + Platformio</p>
+
+
+              <h3>External Resources</h3>
+
+             
+
+              <div class="refs">
+              <a href="https://www.silabs.com/documents/public/data-sheets/CP2102-9.pdf">CP2102 datasheet</a>
+              <a href="https://github.com/Jack-Dietrich/DIY-Streamdeck--UART-USB">GitHub link to the project</a>
+              <a href="https://youtu.be/wdgULBpRoXk"> Interesting video that helped me learn HID and USB protocol</a>
+
+
+              
+              </div>                
+
+
+
+            </div>
+              
+
+
+
+
+
+
+
+
+
+        </div>
+
+  </div>
+
+
+
+
   
   
 
