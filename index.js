@@ -6,7 +6,7 @@ let currentTemp = 25;
 const app = express();// create new express instance
 
 
-app.use(express.static('public'))//to serve the static part of the page.
+app.use(express.static('docs'))//to serve the static part of the page.
 app.use(express.json());
 
 
