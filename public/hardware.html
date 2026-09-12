@@ -2,6 +2,8 @@
 <html>
 <head>
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 
 
@@ -12,7 +14,7 @@
 
 
 
-<title>Welcome!</title>
+<title>Hardware and Embedded Projects</title>
 
 
 </head>
@@ -78,6 +80,30 @@ div{
       <hr>
   </div>
 
+  <div class="project">
+    <div class="proj_desc">
+      <h1>MVM Unit of Microsoft's Brainwave AI Accelerator</h1>
+      <hr class="solid">
+
+      <div class="description">
+        <h3>Summary</h3>
+        <p>Implemented the matrix-vector multiplication engine for Microsoft's Brainwave accelerator in SystemVerilog, including memory, dot-product, accumulator, and control FSM modules. Pipelined the design to more than 350 MHz on a Xilinx FPGA.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="proj_desc">
+      <h1>STM32 Real-Time Executive</h1>
+      <hr class="solid">
+
+      <div class="description">
+        <h3>Summary</h3>
+        <p>Developed an STM32 real-time executive in C supporting dynamic memory allocation, task preemption and yielding, and Round Robin and Earliest Deadline First scheduling.</p>
+      </div>
+    </div>
+  </div>
+
   <div class="project" style="flex-direction: row-reverse;">
 
         <div class = "slideshow">
@@ -96,9 +122,14 @@ div{
 
         </div>
 
+
+
+
+        
+
         <div class="proj_desc">
 
-            <h1>6502 Based Computer</h1>
+            <h1>6502-Based Computer</h1>
             <hr class="solid">
             
             <div class="description">
@@ -107,20 +138,20 @@ div{
 
               <ul>
                 <li>
-                Built 6502-microprocessor based computer on breadboards, later being translated to a PCB.
+                Built a 6502 microprocessor-based computer on breadboards, later translating it to a PCB.
                 </li>
                 <li>
-                Referenced wiring diagrams as well as creating logic diagrams while building. Used oscilloscope as well as EEPROM programmer to debug.
+                Referenced wiring diagrams and created logic diagrams while building. Used an oscilloscope and an EEPROM programmer for debugging.
                 </li>
                 <li>
-                Enhanced knowledge of computer architecture, assembly, I/O, Binary and Hexadecimal. 
+                Strengthened my knowledge of computer architecture, assembly, I/O, binary, and hexadecimal.
                 </li>
               </ul>
 
 
               <h3>Development environment</h3>
 
-              <p>Kikad</p>
+              <p>KiCad</p>
 
               
               <div class="subtitle">
@@ -172,26 +203,26 @@ div{
 
         <div class="proj_desc">
 
-            <h1>BMP_180 Library Sensor Project</h1>
+            <h1>BMP180 Sensor Library Project</h1>
             <hr class="solid">
             
             <div class="description">
 
               <h3>Background</h3>
-              <p>The BMP_180 is a temperature and pressure sensor manufactured by Bosh. My Goal was to write my own library using I2C in order to operate the device and access temperatures in my building. After doing this, My goal was to use the onboard WIFI in order to send POST requests to my website so I could monitor temperatures wherever I was through my website.</p>
+              <p>The BMP180 is a temperature and pressure sensor manufactured by Bosch. My goal was to write a library using I2C to operate the device and read temperatures in my building. I then used the onboard Wi-Fi to send POST requests to my website so I could monitor temperatures remotely.</p>
 
 
               <h3>Summary</h3>
 
               <ul>
                 <li>
-                Referenced datasheet in order to write C++ code to communicate with the BMP180 sensor via I2C.
+                Referenced the datasheet to write C++ code that communicates with the BMP180 sensor via I2C.
                 </li>
                 <li>
-                Used a logic analyzer in order to debug I2C communication while referencing the datasheet and known good examples.
+                Used a logic analyzer to debug I2C communication while referencing the datasheet and known-good examples.
                 </li>
                 <li>
-                Integrated WiFi communication to communicate with node.js server and post temperatures.
+                Integrated Wi-Fi communication with a Node.js server to post temperature readings.
                 </li>
               </ul>
 
@@ -199,22 +230,22 @@ div{
 
               <ul>
                 <li>
-                I2C Protocol
+                I2C protocol
                 </li>
                 <li>
                 ESP32
                 </li>
                 <li>
-                Logic Analyzing(Sigrok)
+                Logic analysis (Sigrok)
                 </li>
                 <li>
-                Hardware/Software interface
+                Hardware/software interface
                 </li>
               </ul>
 
               <h3>Development environment</h3>
 
-              <p>Vscode + Platformio</p>              
+              <p>VS Code and PlatformIO</p>
 
 
               <h3>External Resources</h3>
@@ -224,7 +255,7 @@ div{
               <div class="refs">
               <a href="https://cdn-shop.adafruit.com/datasheets/BST-BMP180-DS000-09.pdf">BMP180 Datasheet</a>
               <a href="https://github.com/Jack-Dietrich/bmp180-library-project">GitHub Link</a>
-              <a href="https://sigrok.org/wiki/Main_Page">Sigrock</a>
+              <a href="https://sigrok.org/wiki/Main_Page">Sigrok</a>
               
               </div>
 
@@ -300,11 +331,11 @@ div{
                 Interrupts
                 </li>
                 <li>
-                Hardware/Software interface
+                Hardware/software interface
                 </li>
 
                 <li>
-                Mutex's, Semaphores, Task creation and management
+                Mutexes, semaphores, task creation, and management
                 </li>
 
               </ul>
@@ -352,7 +383,7 @@ div{
 
         <div class="proj_desc">
 
-            <h1>ADXL-345 library project</h1>
+            <h1>ADXL345 Library Project</h1>
             <hr class="solid">
             
             <div class="description">
@@ -361,7 +392,7 @@ div{
               
 
               <h3>Summary</h3>
-              <p>Starting this project, I learned the basics of SPI communication (MISO, MOSI, SS,CLK) and wrote basic functions in order to power on the device and initate readings. Along the way, I used both a logic analyser and oscilliscope to debug my program. Next I worked on implementing more functionality of the adxl345 such as chanign data rate, tap detection, and interrupt handling. Next, I hope to convert the project to freeRTOS and C in order to more easily handle interrupts and bring my code closer to code seen in production.</p>
+              <p>During this project, I learned the basics of SPI communication (MISO, MOSI, SS, and CLK) and wrote basic functions to power on the device and initiate readings. Along the way, I used both a logic analyzer and an oscilloscope to debug my program. I then implemented more ADXL345 functionality, including changing the data rate, tap detection, and interrupt handling. Next, I hope to convert the project to FreeRTOS and C to handle interrupts more easily and bring my code closer to production code.</p>
 
 
               <h3>Skills</h3>
@@ -375,21 +406,21 @@ div{
                 SPI protocol
                 </li>
                 <li>
-                Realtime Interrupts
+                Real-time interrupts
                 </li>
                 <li>
-                Hardware/Software interface
-                </li>
-
-                <li>
-                Mutex's, Semaphores, Task creation and management
-                </li>
-                <li>
-                Logic Analyzing
+                Hardware/software interface
                 </li>
 
                 <li>
-                Debugging with Oscilliscope
+                Mutexes, semaphores, task creation, and management
+                </li>
+                <li>
+                Logic analysis
+                </li>
+
+                <li>
+                Debugging with an oscilloscope
                 </li>
 
                 <li>
@@ -400,7 +431,7 @@ div{
 
               <h3>Development environment</h3>
 
-              <p>Vscode + Platformio</p>
+              <p>VS Code and PlatformIO</p>
 
               <h3>External Resources</h3>
 
@@ -462,22 +493,22 @@ div{
               <hr class="solid">
 
               <h4>Need</h4>
-              <p>The need for this project started after I hosted my own local music server and was able to start playing music from my phone, but needed to physically turn on the
-                reciever and switch inputs. I figured if I could salvage an IR led from a previous remote and connect it to an esp32 using bluetooth or wifi, I could control the reciever
+              <p>The need for this project arose after I hosted my own local music server and could play music from my phone, but still needed to turn on the
+                receiver and switch inputs manually. I figured that if I could salvage an IR LED from an old remote and connect it to an ESP32 using Bluetooth or Wi-Fi, I could control the receiver
                 remotely.
               </p>
 
               <h4>The Project</h4>
               <p>
-                I used an IR led from an unused remote and connected it to my oscilliscope in order to view the data being sent from the reciver's remote for various commands such as ON, INPUT ETC. I then
-                measured the lengths of these pulses and wrote a c++ program to mimmick this behaviour. On testing this, it did not work!. At first, I attributed this to the strength of the IR led, so I reduced it's resistance
-                hoping for an improvement. However, this yeilded no success. Upon further research, I discovered my problem was twofold. First, my timing for what should be interpereted as a 1 and 0 were slightly off, and second the signal used
-                a 40khz carrier wave. I fixed the first by simply adjusting the timing, and the second I wrote a function to oscillate a signal at 40khz when it was specified to be on. After testing this out, it worked!
+                I used an IR LED from an unused remote and connected it to my oscilloscope to view the data sent by the receiver's remote for commands such as ON and INPUT. I then
+                measured the pulse lengths and wrote a C++ program to mimic this behavior. When I tested it, it did not work. At first, I attributed this to the strength of the IR LED, so I reduced its resistance
+                in the hope of improving the signal. However, this yielded no success. Upon further research, I discovered two problems. First, my timing for interpreting a 1 and 0 was slightly off, and second, the signal used
+                a 40 kHz carrier wave. I fixed the first problem by adjusting the timing, and fixed the second by writing a function to oscillate a signal at 40 kHz when it was specified to be on. After testing this, it worked.
               
               </p>
               <p>
-                My process for sending bits to the IR led was rudimentary so I improved it by using bitwise operations on a 16bit word of data in order to send a bit, then shift the remaining bits until none were left.
-                Next, I researched the bluetooth capabilities of the ESP32 and BluetoothSerial library that would work. I then downloaded a serial terminal on my phone and was able to send commands to the receiver through character input over
+                My process for sending bits to the IR LED was rudimentary, so I improved it by using bitwise operations on a 16-bit word of data to send a bit and then shift the remaining bits until none were left.
+                Next, I researched the Bluetooth capabilities of the ESP32 and found a suitable BluetoothSerial library. I then downloaded a serial terminal on my phone and was able to send commands to the receiver through character input over
                 Bluetooth!
 
 
@@ -498,10 +529,10 @@ div{
                 Bluetooth
                 </li>
                 <li>
-                Hardware/Software interface
+                Hardware/software interface
                 </li>
                 <li>
-                Oscilliscope triggering, measurement and analysis
+                Oscilloscope triggering, measurement, and analysis
                 </li>
                 <li>
                 FreeRTOS queues
@@ -515,7 +546,7 @@ div{
 
               <h3>Development environment</h3>
 
-              <p>Vscode + Platformio</p>
+              <p>VS Code and PlatformIO</p>
 
 
               <h3>External Resources</h3>
@@ -586,8 +617,8 @@ div{
 
               <h4>The Project</h4>
               <p>
-                To start, I discovered I had a CP2102 USB to UART bridge already in my possesion so I connected this to the UART2 port of the ESP32. I then wrote basic freeRTOS functionality in order to detect and send button
-                presses to a queue. On a button being pressed, this would trigger the serial output from the UART port, displaying a button has been pressed. Upon further reasearch I realized that I need this device to appear
+                To start, I discovered I had a CP2102 USB-to-UART bridge already in my possession, so I connected it to the UART2 port of the ESP32. I then wrote basic FreeRTOS functionality to detect button
+                presses and send them to a queue. When a button was pressed, it triggered serial output from the UART port indicating that a button had been pressed. Upon further research, I realized that I needed this device to appear
                 to the computer as a HID (Human Interface Device) in order for it to function as a keyboard. So, I plan on upgrading to a CP2110 which has this feature and should mean button interrupts can trigger HID events,
                 such as keyboard presses, as described in the  <b> <a href="https://wiki.osdev.org/USB_Human_Interface_Devices">OSdev wiki</a> </b>
               </p>
@@ -608,7 +639,7 @@ div{
                 Interfacing with multiple libraries
                 </li>
                 <li>
-                Hardware/Software interface
+                Hardware/software interface
                 </li>
                 <li>
                 FreeRTOS queues
@@ -621,7 +652,7 @@ div{
 
               <h3>Development environment</h3>
 
-              <p>Vscode + Platformio</p>
+              <p>VS Code and PlatformIO</p>
 
 
               <h3>External Resources</h3>
@@ -657,6 +688,10 @@ div{
 
 
 
+
+
+
+
   
   
 
@@ -667,7 +702,7 @@ div{
 <footer class="footer">
   
   <a href="mailto:j22dietr@uwaterloo.ca">Contact Me</a>
-  <p>Designed, programmed and hosted by Jack Dietrich © 2025</p>
+  <p>Designed, programmed and hosted by Jack Dietrich © 2026</p>
 
 
 </footer>
