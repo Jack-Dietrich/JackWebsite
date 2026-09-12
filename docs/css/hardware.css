@@ -208,6 +208,15 @@ hr.solid{
     to{opacity: 1;}
 }
 
+/* Keep one slide visible until JavaScript selects another. */
+.slideshow img {
+    display: none;
+}
+
+.slideshow img:first-of-type {
+    display: block;
+}
+
 /*end slideshow section*/
 
 
