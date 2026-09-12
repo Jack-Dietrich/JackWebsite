@@ -12,6 +12,7 @@ function currentSlide(n) {
 function showSlides(n,no) {
   let i;
   let slides = document.getElementsByClassName("proj_img" + no);
+  if (slides.length === 0) { return; }
   if (n > slides.length) {slideIndex = 1} // if we are past the end, reset to first   
   if (n < 1) {slideIndex = slides.length} //wrap around
   for (i = 0; i < slides.length; i++) {//set all slides to display as none

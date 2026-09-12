@@ -23,15 +23,15 @@ a{
 /* Setting the entire website to use dedicated font*/
 *{
     font-family: "Roboto",sans-serif;
+    box-sizing: border-box;
 }
 
 
 
 .horizontal-body{
-  display: grid;
-  margin: 0 auto;
-  max-width: 1440px;
-  margin-left: auto;
+    width: min(100%, 1440px);
+    margin: 0 auto;
+    padding: 0 24px;
 
 
 }
@@ -46,7 +46,7 @@ a{
 }
 
 .section-1 h1{
-    font-size: 90pt;
+    font-size: clamp(2.5rem, 8vw, 7.5rem);
 }
 
 
@@ -61,7 +61,7 @@ a{
     white-space: nowrap;
     border-right: .15em solid rgb(242, 192, 120);
     
-      margin: auto 50px auto;
+    margin: auto;
     animation: typing 2s steps(20,end),
                 blink-carat .75s step-end infinite;
 
@@ -76,6 +76,8 @@ a{
 .section-2{
     display: flex;
     flex-direction: row;
+    gap: 32px;
+    align-items: center;
 }
 
 p{
@@ -86,7 +88,8 @@ p{
 .headshot{
     display: flex;
     border-radius: 500px;
-    height: 600px;
+    width: min(600px, 45vw);
+    height: auto;
     margin-left: auto; /* to align it to  the left*/
 
 
@@ -165,8 +168,8 @@ p{
 .footer{
     background-color: rgb(242, 192, 120);
     margin: 0 auto;
-    max-width: 1440px;
-    margin-left: auto;
+    width: min(100%, 1440px);
+    padding: 16px 24px;
     margin-top: 50px;
 }
 
@@ -195,4 +198,31 @@ p{
     from, to {border-color: transparent}
     50%{border-color: rgb(242, 192, 120)}
     
+}
+
+@media (max-width: 700px) {
+    .horizontal-body {
+        padding: 0 16px;
+    }
+
+    .section-1 h1 {
+        white-space: normal;
+        overflow-wrap: anywhere;
+        border-right: 0;
+        animation: none;
+    }
+
+    .section-2 {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .headshot {
+        width: min(100%, 360px);
+        margin: 0 auto;
+    }
+
+    p {
+        font-size: 1rem;
+    }
 }
